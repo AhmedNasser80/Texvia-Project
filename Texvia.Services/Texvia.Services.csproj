@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="AuthServices\" />
     <Folder Include="ContactServices\" />
     <Folder Include="IndustryServices\" />
     <Folder Include="SolutionServices\" />
