@@ -1,0 +1,6 @@
+@Texvia.API_HostAddress = http://localhost:5034
+
+GET {{Texvia.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

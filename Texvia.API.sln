@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texvia.API", "Texvia.API\Texvia.API.csproj", "{92076D11-94FA-4B8D-8466-B0511084591C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texvia.Services", "Texvia.Services\Texvia.Services.csproj", "{93344C1F-EC9F-4CC0-B347-44440176599A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texvia.Domain", "Texvia.Domain\Texvia.Domain.csproj", "{47832E09-9F35-4AC8-8A4F-52FE56D49B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texvia.Abstraction", "Texvia.Abstraction\Texvia.Abstraction.csproj", "{49A95FB2-69BA-4C78-999F-3E112956FF18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texvia.Persistence", "Texvia.Persistence\Texvia.Persistence.csproj", "{B9EFEBB7-961D-4CCA-A0DD-7E35870E49AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texvia.Shared", "Texvia.Shared\Texvia.Shared.csproj", "{8C8815E7-7AD2-45F8-A8D3-A6DE188FC291}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92076D11-94FA-4B8D-8466-B0511084591C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92076D11-94FA-4B8D-8466-B0511084591C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92076D11-94FA-4B8D-8466-B0511084591C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92076D11-94FA-4B8D-8466-B0511084591C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93344C1F-EC9F-4CC0-B347-44440176599A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93344C1F-EC9F-4CC0-B347-44440176599A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93344C1F-EC9F-4CC0-B347-44440176599A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93344C1F-EC9F-4CC0-B347-44440176599A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47832E09-9F35-4AC8-8A4F-52FE56D49B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47832E09-9F35-4AC8-8A4F-52FE56D49B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47832E09-9F35-4AC8-8A4F-52FE56D49B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47832E09-9F35-4AC8-8A4F-52FE56D49B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A95FB2-69BA-4C78-999F-3E112956FF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A95FB2-69BA-4C78-999F-3E112956FF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A95FB2-69BA-4C78-999F-3E112956FF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A95FB2-69BA-4C78-999F-3E112956FF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9EFEBB7-961D-4CCA-A0DD-7E35870E49AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EFEBB7-961D-4CCA-A0DD-7E35870E49AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EFEBB7-961D-4CCA-A0DD-7E35870E49AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9EFEBB7-961D-4CCA-A0DD-7E35870E49AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8815E7-7AD2-45F8-A8D3-A6DE188FC291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8815E7-7AD2-45F8-A8D3-A6DE188FC291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8815E7-7AD2-45F8-A8D3-A6DE188FC291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8815E7-7AD2-45F8-A8D3-A6DE188FC291}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C400136-E488-4ADF-947F-CD5DCBB7168C}
+	EndGlobalSection
+EndGlobal
