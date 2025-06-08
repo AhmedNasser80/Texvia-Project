@@ -10,9 +10,11 @@ using Texvia.Domain.Models;
 
 namespace Texvia.Persistence.Contexts
 {
-    public class TexviaDBContext(DbContextOptions<TexviaDBContext> options) : IdentityDbContext(options)
+    public class TexviaDBContext : IdentityDbContext<ApplicationUser>
     {
-
+        public TexviaDBContext(DbContextOptions<TexviaDBContext> options) : base(options)
+        {
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,5 +25,7 @@ namespace Texvia.Persistence.Contexts
         DbSet<Industry> Industries { get; set; }
         DbSet<Solution> Solutions { get; set; }
         DbSet<SolutionProviders> SolutionProviders { get; set; }
+        public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
+
     }
 }

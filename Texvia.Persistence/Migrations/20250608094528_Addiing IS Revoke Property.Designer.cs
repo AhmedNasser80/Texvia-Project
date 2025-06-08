@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Texvia.Persistence.Contexts;
 
@@ -11,9 +12,11 @@ using Texvia.Persistence.Contexts;
 namespace Texvia.Persistence.Migrations
 {
     [DbContext(typeof(TexviaDBContext))]
-    partial class TexviaDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250608094528_Addiing IS Revoke Property")]
+    partial class AddiingISRevokeProperty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

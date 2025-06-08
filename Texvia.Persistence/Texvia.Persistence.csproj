@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Configurations\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +17,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Texvia.Domain\Texvia.Domain.csproj" />
+    <ProjectReference Include="..\Texvia.Services\Texvia.Services.csproj" />
+    <ProjectReference Include="..\Texvia.Shared\Texvia.Shared.csproj" />
   </ItemGroup>
 
 </Project>
