@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Texvia.Domain.Conctracts;
@@ -221,6 +222,32 @@ namespace Texvia.API.Controllers
                 return Unauthorized(new { message = "Invalid or expired refresh token." });
             }
             return Ok(new { message = "Logged out successfully." });
+        }
+
+        #endregion
+        #region Get All Users
+        [Authorize(Roles = "admin")] // فقط الأدمن يقدر يشوف كل المستخدمين
+        [HttpGet("all-users")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = _userManager.Users.ToList();
+
+            var userList = new List<UserInfoDto>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                var role = roles.FirstOrDefault() ?? "user"; // لو مفيش رول، افتراضي user
+
+                userList.Add(new UserInfoDto
+                {
+                    Email = user.Email,
+                    Name = user.Name,
+                    Role = role
+                });
+            }
+
+            return Ok(userList);
         }
 
         #endregion
